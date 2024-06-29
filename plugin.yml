@@ -1,24 +1,38 @@
 name: FlexiEssentials
 author: VillagersYT
-version: 0.1
+version: 0.2
 description: A simple Minecraft plugin for basic commands
 main: net.villagersyt.flexiessentials.Main
 commands:
   gmc:
     description: Switch gamemode of player in creative
     permission: flexiessentials.cmds.gm.creative
+    usage: /gmc <player>
   gms:
     description: Switch gamemode of player in survival
     permission: flexiessentials.cmds.gm.survival
+    usage: /gms <player>
   gma:
     description: Switch gamemode of player in adventure
     permission: flexiessentials.cmds.gm.adventure
+    usage: /gma <player>
   gmsp:
     description: Switch gamemode of player in spectator
     permission: flexiessentials.cmds.gm.spectator
+    usage: /gmsp <player>
   fly:
     description: Turn fly on or off for a player
     permission: flexiessentials.cmds.fly
+    usage: /fly <player>
   god:
     description: Turn god mode on or off for a player
     permission: flexiessentials.cmds.god
+    usage: /god <player>
+  heal:
+    description: Restores all life to a player
+    permission: flexiessentials.cmds.heal
+    usage: /heal <player>
+  feed:
+    description: Restores all food to a player
+    permission: flexiessentials.cmds.feed
+    usage: /feed <player>

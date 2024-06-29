@@ -10,6 +10,8 @@ import net.villagersyt.flexiessentials.commands.gmaCommand;
 import net.villagersyt.flexiessentials.commands.gmspCommand;
 import net.villagersyt.flexiessentials.commands.flyCommand;
 import net.villagersyt.flexiessentials.commands.godCommand;
+import net.villagersyt.flexiessentials.commands.healCommand;
+import net.villagersyt.flexiessentials.commands.feedCommand;
 import net.villagersyt.flexiessentials.listeners.GodModeListener;
 
 public class Main extends JavaPlugin {
@@ -25,6 +27,8 @@ public class Main extends JavaPlugin {
 		this.getCommand("gmsp").setExecutor((CommandExecutor) new gmspCommand());
 		this.getCommand("fly").setExecutor((CommandExecutor) new flyCommand());
 		this.getCommand("god").setExecutor((CommandExecutor) new godCommand());
+		this.getCommand("heal").setExecutor((CommandExecutor) new healCommand());
+		this.getCommand("feed").setExecutor((CommandExecutor) new feedCommand());
 		
 		getServer().getPluginManager().registerEvents(new GodModeListener(godCommand.getGodModePlayers()), this);
 		
